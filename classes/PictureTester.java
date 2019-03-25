@@ -18,7 +18,24 @@ public class PictureTester
   }
   public static void testKeepOnlyBlue()
   {
-
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.keepOnlyBlue();
+    beach.explore();
+  }
+  public static void testNegate()
+  {
+    Picture kitten2 = new Picture("kitten2.jpg");
+    kitten2.explore();
+    kitten2.negatePixels();
+    kitten2.explore();
+  }
+  public static void testGrayscale()
+  {
+    Picture barbaraS = new Picture("barbaraS.jpg");
+    barbaraS.explore();
+    barbaraS.greyscalePixels();
+    barbaraS.explore();
   }
   
   /** Method to test mirrorVertical */
@@ -67,16 +84,16 @@ public class PictureTester
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
-    //testGrayscale();
+    testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
-    testMirrorTemple();
+    //testMirrorVertical();
+    //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
+   // testCollage();
     //testCopy();
-    testEdgeDetection();
+    //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
